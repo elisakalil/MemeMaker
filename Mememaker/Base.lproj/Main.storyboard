@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mememaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Captura de Tela 2022-04-19 às 19.40.18" translatesAutoresizingMaskIntoConstraints="NO" id="qzE-qV-ll9">
+                                <rect key="frame" x="32" y="273" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="a2j-dn-2oh"/>
+                                    <constraint firstAttribute="height" constant="350" id="m5S-vI-juQ"/>
+                                </constraints>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gaP-rA-fzH">
+                                <rect key="frame" x="129" y="223" width="156" height="32"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <connections>
+                                    <action selector="actionSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="GGU-bd-akJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0zl-jW-uTv">
+                                <rect key="frame" x="136" y="642" width="143" height="32"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <connections>
+                                    <action selector="actionSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="eGj-z3-Gnx"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ea2-P2-0VW">
+                                <rect key="frame" x="32" y="273" width="350" height="70"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="lJm-dt-IE2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="3" height="2"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="O1N-Nz-e7o" appends="YES" id="2KH-Fv-AbN"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTOM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eh2-CM-mjo">
+                                <rect key="frame" x="32" y="553" width="350" height="70"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="u7L-RQ-ga2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="3" height="2"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="82T-qD-BOc" appends="YES" id="HYB-tW-31R"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ea2-P2-0VW" firstAttribute="leading" secondItem="qzE-qV-ll9" secondAttribute="leading" id="0WH-fi-PaM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0zl-jW-uTv" secondAttribute="trailing" constant="135" id="6RG-Yx-Bdi"/>
+                            <constraint firstItem="qzE-qV-ll9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BI1-sT-13s"/>
+                            <constraint firstItem="qzE-qV-ll9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BdB-a8-78W"/>
+                            <constraint firstItem="qzE-qV-ll9" firstAttribute="top" secondItem="gaP-rA-fzH" secondAttribute="bottom" constant="19" id="HHa-Gb-prn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gaP-rA-fzH" secondAttribute="trailing" constant="129" id="OiQ-dz-zlw"/>
+                            <constraint firstItem="eh2-CM-mjo" firstAttribute="leading" secondItem="qzE-qV-ll9" secondAttribute="leading" id="TOz-wz-4uv"/>
+                            <constraint firstItem="0zl-jW-uTv" firstAttribute="top" secondItem="qzE-qV-ll9" secondAttribute="bottom" constant="19" id="Yjq-q1-Avx"/>
+                            <constraint firstItem="qzE-qV-ll9" firstAttribute="trailing" secondItem="eh2-CM-mjo" secondAttribute="trailing" id="fbB-EG-4df"/>
+                            <constraint firstItem="0zl-jW-uTv" firstAttribute="top" secondItem="eh2-CM-mjo" secondAttribute="bottom" constant="19" id="gYm-9M-BAl"/>
+                            <constraint firstItem="qzE-qV-ll9" firstAttribute="trailing" secondItem="Ea2-P2-0VW" secondAttribute="trailing" id="h5h-Rz-YgC"/>
+                            <constraint firstItem="0zl-jW-uTv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="hlM-pV-9Au"/>
+                            <constraint firstItem="Ea2-P2-0VW" firstAttribute="top" secondItem="qzE-qV-ll9" secondAttribute="top" id="nVv-U9-teP"/>
+                            <constraint firstItem="gaP-rA-fzH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="ucN-1W-X18"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomCaptionLabel" destination="eh2-CM-mjo" id="2YX-1e-33I"/>
+                        <outlet property="bottomSegmentedControl" destination="0zl-jW-uTv" id="EMh-WI-Yna"/>
+                        <outlet property="memeImage" destination="qzE-qV-ll9" id="U5H-bb-xfR"/>
+                        <outlet property="topCaptionLabel" destination="Ea2-P2-0VW" id="TyN-j6-G2Q"/>
+                        <outlet property="topSegmentedControl" destination="gaP-rA-fzH" id="9BN-VA-ybo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="O1N-Nz-e7o">
+                    <connections>
+                        <action selector="dragTopLabel:" destination="BYZ-38-t0r" id="YXp-hn-32c"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="82T-qD-BOc">
+                    <connections>
+                        <action selector="dragBottomLabel:" destination="BYZ-38-t0r" id="uLv-Jo-BAm"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Captura de Tela 2022-04-19 às 19.40.18" width="761" height="565"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
